@@ -5,7 +5,7 @@ Fitness Tracker App
 # Links:
 
 Deployed link:
-
+https://workout-atlas.herokuapp.com/
 GitHub app repo:
 https://github.com/lisasosa/Fitness-Tracker
 
