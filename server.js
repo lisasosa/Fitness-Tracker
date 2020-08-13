@@ -19,10 +19,14 @@ if (process.env.NODE_ENV === "production") {
     uri = process.env.MONGODB_URI;
 }
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// });
 
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
